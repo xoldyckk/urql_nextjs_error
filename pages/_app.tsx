@@ -11,7 +11,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 
 export default withUrqlClient(
   (ssrExchange) => ({
-    url: "http://localhost:3000/api/graphql",
+    url: "/api/graphql",
     exchanges: [
       devtoolsExchange,
       dedupExchange,
